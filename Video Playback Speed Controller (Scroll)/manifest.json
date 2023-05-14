@@ -1,25 +1,27 @@
 {
-    "manifest_version": 2,
-    "name": "Playback Speed Controller",
-    "version": "1.0",
-    "description": "Change playback speed using Shift + Scroll Up/Down.",
-    "icons": {
-        "48": "icons/scroll-playback-speed-controller-48.png"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "https://odysee.com/*",
-                "http://odysee.com/*",
-                "https://www.bitchute.com/*",
-                "http://www.bitchute.com/*",
-                "https://rumble.com/*",
-                "http://rumble.com/*"
-            ],
-            "js": [
-                "playspeed.js"
-            ],
-            "run_at": "document_end"
-        }
-    ]
+  "manifest_version": 2,
+  "name": "Playback Speed Controller",
+  "version": "1.0",
+  "description": "Change playback speed using Shift + Scroll Up/Down.",
+  "icons": {
+    "48": "icons/scroll-playback-speed-controller-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://odysee.com/*",
+        "http://odysee.com/*",
+        "https://www.bitchute.com/*",
+        "http://www.bitchute.com/*",
+        "https://rumble.com/*",
+        "http://rumble.com/*",
+        "https://twitter.com/*",
+        "http://twitter.com/*",
+        "https://instagram.com/*",
+        "http://instagram.com/*"
+      ],
+      "js": ["playspeed.js"],
+      "run_at": "document_end"
+    }
+  ]
 }
